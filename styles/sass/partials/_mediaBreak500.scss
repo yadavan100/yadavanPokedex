@@ -1,0 +1,33 @@
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .browseContainer {
+        .pokeForm {
+        width: 100%;
+     }
+    }
+    .singlePokemonContainer {
+        img {
+            width: 280px;
+            height: 280px;
+        }
+    }
+    .searchForm {
+
+        .searchOptions {
+            flex-direction: column;
+        }
+
+        input[type="search"] {
+            width: 100%;
+        }
+
+        .submitSearchContainer {
+            width: 50%;
+        }
+
+    }
+}

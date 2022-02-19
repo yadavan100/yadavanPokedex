@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<main>
+    <div class="wrapper">
+        <img class="pokemonTitle" src="./assets/pokemonTitle.png" alt="Pokemon title with the slogan gotta catch them all">
+        <div class="iconWrapper">
+            <img class="icon" src="./assets/iconPack/pokeBallOne.png" alt="">
+            <h1>PokeDex </h1>
+            <img class="icon" src="./assets/iconPack/pokeBallOne.png" alt="">
+        </div>
+    </div>
+    <section class="aboutSection">
+        <div class="wrapper aboutContainer">
+            <div class="aboutImgContainer">
+                <img class="ash" src="./assets/ashPokemon.png" alt="Ash Ketchum pointing to the side">
+            </div>
+            <div class="aboutTextContainer">
+                <h2>Welcome to our site!</h2>
+                <p>Hey, you there! Do you want to be able to discover all the Pokemon in the universe with just a click of a button? Well you've come to the right place! Just like how a trainer would use a real pokedex, our pokedex gives information about all the Pokemon in the world that are contained in the database. You'll be able to check their height, weight, type and many more attributes. I guess you could say it's a hi-tech encylcopedia! So get pumped and get ready to catch 'em all!</p>
+                <p class="secondP"> Our Pokedex is a web app that utilizes JavaScript, HTML and CSS. Utilizing the PokeAPI, we created a Pokedex with all the current generations of Pokedmon. Our intention with this project was to work with a larger, more complex API and expand our knowledge on styling with CSS</p>
+            </div>
+        </div>
+        <div class="wrapper aboutContainerTwo">
+            <div class="aboutTextContainerTwo">
+                <h2>About Pokemon</h2>
+                <p>Welcome to the world of Pokemon! In this universe, people and Pokemon live together by supporting each other. Pokemon
+                have been, from the very beginning, spoken of as friends and partners to the humans of the Pokemon world, helping them
+                with various tasks from constructing buildings to exploration. Some people play with Pokemon, some battle with them, and
+                many people take Pokemon with them on a journey. However, we still don't know everything about them. There are still
+                many mysteries to be solved but with an eager mind and the help of a pokedex like this one, we can get closer to
+                discovering the truths!</p>
+                <p class="secondP">"Make your wonderful dream a reality, and it will become your truth." - Professor Oak</p>
+            </div>
+            <div class="aboutImgContainerTwo">
+                <img class="pikachu" src="./assets/pikachu.png" alt="Pikachu wearing a bracelet">
+            </div>
+        </div>
+    </section>
+    <section class="meetSection">
+        <div class="wrapper meetWrapper">
+            <div class="titleUpContainer">
+                <h2 class="titleUp">Meet a pokemon</h2>
+            </div>
+            <div class="meetContainer">
+                <div class="meetImgContainer">
+                    <div class="singlePokemonContainer">
+                        <!-- JavaScript appended single image -->
+                    </div>
+                    <button type="submit" class="singlePokemonButton">Pokemon surprise!</button>
+                </div>
+                <div class="meetTextContainer">
+                    <div class="greetContainer">
+                        <h2 class="greetingTitle"></h2>
+                    </div>
+                    <div class="meetInfoContainer">
+                        <p class="pId">ID: </p>
+                        <p class="pHp">HP: </p>
+                        <p class="pH">Height: </p>
+                        <p class="pW">Weight: </p>
+                        <p class="pType">Type: </p>
+                        <p class="pAttack">Attack: </p>
+                        <p class="pDefense">Defense: </p>
+                    </div>
+                </div>
+            </div>
+            <form class="searchForm" action="">
+                <h2 class="searchTitle">Search for a specific Pokemon</h2>
+                <fieldset class="searchOptions">
+                    <label class="sr-only" for="searchInput">Do you want to meet a specific Pokemon?</label>
+                    <input type="search" name="searchInput" placeholder="Name or ID">
+                    <div class="submitSearchContainer">
+                        <input id="searchButton" type="submit" value="Search!">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <section class="browseSection">
+        <div class="wrapper">
+            <div class="titleUpContainer">
+                <h2 class="titleUp">Browse PokeDex</h2>
+            </div>
+            <div class = "browseContainer">
+                <div class="howMany">
+                    <h3>Hot tip!</h3>
+                    <p class="pLink">After clicking the button you'll be presented with various Pokemon. We've conveniently linked each Pokemon to the official Pokemon Pokedex site for you to get more in-depth information on these lovely creatures! Clicking on the Pokemon's name will take you to the external site.</p>
+                </div>
+            <form action="" class = "pokeForm">
+                <p>How many Pokemon do you want to see?</p>
+                <fieldset class="options">
+        
+                    <input type="radio" name="poke" id="first" value="4"  >
+                    <label for="first">4</label>
+        
+                    <input type="radio" name="poke" id="second" value="8" >
+                    <label for="second">8</label>
+        
+                    <input type="radio" name="poke" id="third" value="12" >
+                    <label for="third">12</label>
+        
+                </fieldset>
+                <div class="submitContainer">
+                    <input type="submit" value="Click me!" id="manyPoke">
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="wrapper pokeUlWrapper">
+            <ul id = "pokeUl" class = "ulContainer randomPokemonUl">
+                <!-- JavaScript appended gallery -->
+            </ul>
+        </div>
+    </section>
+    
+    <!-- for after project completion -->
+    <!-- <div class="wrapper linkFlex">
+        <div class="linkContainer">
+            <p>Thanks for visiting our site! After spending some time on our page, would you like to test your Pokemon knowledge?! Our fellow classmates <span>Alvin</span> and <span>William</span>, have created an amazing game that does just that! Click the link below to go to their page and test your skills!</p>
+            <h3><a href="">Pokemon Wordle</a></h3>
+        </div>
+    </div> -->
+
+</main>
+
+    <footer>
+        <h2>Created at <a class="junoLink" href="https://junocollege.com/">Juno College</a></h2>
+        <p>By: <span>Yadavan Aravinthan</span> and <span>Stojanco Vasileski</span></p>
+    </footer>
+
+        <script src="./script.js"></script>
+</body>
+</html>

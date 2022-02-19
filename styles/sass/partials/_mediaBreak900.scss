@@ -1,0 +1,75 @@
+@media (max-width: 900px) {
+    
+    .aboutContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        .aboutImgContainer {
+
+            img {
+                width: 75%;
+            }
+        }
+        
+        .aboutTextContainer {
+            width: 90%;
+        }
+        .aboutImgContainer {
+            width: 100%;
+        }
+    }
+    .aboutContainerTwo {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+
+        .aboutTextContainerTwo {
+            width: 90%;
+        }
+        .aboutImgContainerTwo {
+            width: 100%;
+
+            img {
+                width: 65%;
+            }
+        }
+    }
+    
+    .singlePokemonContainer {
+        
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .meetContainer .meetTextContainer {
+        h2 {
+            font-size: 1.2rem;
+        }
+        width: 40%;
+    }
+
+    .searchForm {
+
+        h2 {
+            width: 100%;
+        }
+
+        .searchOptions {
+            width: 100%;
+        }
+
+        input[type="search"] {
+            width: 60%;
+        }
+
+        .submitSearchContainer {
+            width: 30%;
+        }
+
+    }
+
+    .browseSub {
+        width: 80%;
+    }
+}
